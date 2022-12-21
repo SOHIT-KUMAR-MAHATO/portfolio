@@ -119,7 +119,7 @@ nav ul li {
 }
 .cont1::before{
     content: "";
-    background: url("focused_176845924-stock-photo-young-man-using-laptop-desk-transformed.jpeg");
+    background: url("/portfolio/focused_176845924-stock-photo-young-man-using-laptop-desk-transformed.jpeg");
     position: absolute;
     display: flex;
     justify-content: center;
