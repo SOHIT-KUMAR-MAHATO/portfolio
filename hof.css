@@ -32,6 +32,8 @@ header{
     position: relative;
     margin: 3vh 12vw;
     padding: 8px;
+    height: 50vh;
+    border-left: 4px solid black;
 }
 .bt{
     border-radius: 50%;
