@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+header{
+    font-family: 'La Belle Aurore', cursive ;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 11vh;
+}
+
+.container {
+        z-index: 2;
+        background-color: white;
+        width: 100vw;
+        position: fixed;
+        flex-wrap: wrap;
+        box-shadow: 0px 0px 20px 9px rgb(180, 180, 180);
+        height: 8vh;
+        display: flex;
+        justify-content: space-between;
+    }
+.cont2{
+    height: 100vh;
+    margin: auto;
+    width: 100vw;
+    display: block;
+    top: 10vh;
+    position: relative;
+}
+
+.arr{
+    z-index: 1;
+}
+.non{
+    opacity: 0;
+}
+.ln{
+    line-height: 2.5rem;
+    position: relative;
+    margin: 3vh 12vw;
+    height: 62vh;
+    border-radius: 21px;
+    border-left: 4px solid black;
+    font-size: 1.2rem;
+}
+.pad{
+    padding: 8px 16px;
+}
+.hit{
+    height: 62vh;
+}
+.ln img{
+    padding: 4px;
+    margin-left: 1vh;
+    position: relative;
+    top: 0.5vh;
+    width: 1.5rem;
+    filter: invert(60%) sepia(100%) hue-rotate(223deg) saturate(5); 
+}
+.lnToggle{
+    filter: invert(60%) sepia(100%) hue-rotate(-120deg) saturate(10); 
+}
+.bt{
+    border-radius: 50%;
+    text-decoration: none;
+    top: 0.8vh;
+    color: blueviolet;
+    position: relative;
+    right: 0.5vw;
+    background-color: white;
+}
+#hof1{
+    font-weight: 600;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 1rem;
+    margin: 0 8px;
+}
+span a{
+    word-wrap: break-word;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1rem;
+    color: black;
+}
+.wht{
+    color: white;
+} 
+@media screen and (max-width: 900px) {
+    .ln{
+        border-left: none;
+        margin: 3vh 4vw;
+    }
+    .bt {
+        right: 0.3rem;
+    }
+    span a{
+        
+        width: 20vw !important;
+    }
+    .container{
+        height: 8.5vh;
+        width: 100% !important;
+    }
+    .container p{
+        width: 64vw !important;
+    }
+    span{
+        width: 30vw !important;
+    }
+    .cont {
+        height: 80rem !important;
+    }
+    .cont2{
+        height: 100vh;
+    }
+}

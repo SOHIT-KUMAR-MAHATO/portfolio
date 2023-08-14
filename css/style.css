@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Baloo+Bhaina+2&family=La+Belle+Aurore&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+nav ul {
+    margin: 18px 5px;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    z-index: 4;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 20px 9px rgb(43, 43, 43);
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    padding: 10px 25px;
+    list-style: none;
+}
+
+#nav ul li a {
+    font-family: 'Baloo Bhai 2', cursive;
+    color:blueviolet;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+#nav ul li a:hover {
+    font-weight: 600;
+}
+
+.container p {
+    
+    font-family: 'Baloo Bhai 2', cursive !important;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    width: auto;
+    padding: 16px 30px;
+    color: rgb(246, 6, 246);
+}
+
+.items {
+    display: none;
+    right: 0;
+    top: 7.7vh;
+    float: right;
+    box-shadow: 0px 0px 5px 2px rgb(201, 201, 201);
+    margin-top: 0.5vh;
+    position: absolute;
+    width: 6vw;
+
+}
+
+.items {
+    z-index: 1;
+    animation: slide 0.2s linear;
+    width: 10vw;
+    list-style: none;
+}
+
+.items  a {
+    animation: slide1 0.8s ease;
+    transition: 0.2s all ease;
+    display: block;
+    height: 5vh;
+    text-align: center !important;
+    width: 7vw;
+    border: none;
+    font-weight: 400;
+    color:violet;
+    padding: 10px 25px;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+@keyframes slide {
+    from{height:0vw;}
+    to{height: 7vw;}
+}
+@keyframes slide1 {
+    from{height:0vw;}
+    to{height: 5vh;}
+}
+@keyframes slide3 {
+    from{width:0%;}
+    to{width: 15vh;}
+}
+@keyframes slide4 {
+    from{width:0vw;}
+    to{width: 12vh;}
+}
+ 
+.items :hover {
+    background-color: rgba(21, 18, 18, 0.792);
+    border: none !important;
+    color: white;
+}
+.items  a:hover{
+    color: white;
+}
+.drp{
+    display: inline-block;
+}
+.dis{
+    display: block;
+}
+.items a{
+    z-index: 5 !important;
+}
+.cont1::before{
+    content: "";
+    background: url("/images/focused_176845924-stock-photo-young-man-using-laptop-desk-transformed.jpeg");
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: -2;
+}
+.shadow::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+.cont1{
+    height: 100vh;
+    position: relative;
+    top: 8vh;
+}
+.txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 70vh;
+}
+.in-txt{
+    font-size: 1em;
+    width: 35vw;
+    font-family: Arial;
+    padding: 8px 16px;
+    height: 30vh;
+    color: white;;   
+}
+.in-txt p{
+    animation: pp 1s ease-in-out;
+    position: relative;  
+    font-style: italic;
+    line-height: 1.7rem;
+    margin-left: 3vw !important;
+    font-size: 1.2rem;
+    margin: 8px 2px;
+}
+@keyframes pp {
+    from{opacity:0;top: -3vh;}
+    to{top:0vh ;opacity: 10;}
+}
+
+.wht1{
+    font-family: 'La Belle Aurore', cursive ;
+    color: violet;
+       font-size: 2.2rem;
+   }
+.wht2{
+ color: violet;
+    font-size: 1.4rem;
+}
+.in-txt h1{
+    font-size: 1.7rem;
+}
+.resume{
+    margin-top: 2vh;
+    margin-left: 3vw !important;
+}
+.resume button{
+    width: 10vw;
+    font-family: 'Baloo Bhaina 2', cursive;
+    text-align: center;
+    margin: 4px 5px;
+    font-size: 0.92rem;
+    padding: 6px;
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s all ease-in-out;
+}
+.resume button:hover{
+    background-color: black;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+}
+.ht{
+    position: relative;
+    padding: 0px 4px;
+    top: 0.4vh !important;
+}
+.i{
+    cursor: pointer;
+    position: relative;
+    left: 2.5vw;
+    color:blueviolet;
+    font-size: 30px;
+}
+.black1{
+    background-color: rgb(0, 0, 0,0.4) !important;
+}
+.black{
+    background-color: rgb(0, 0, 0) !important;
+}
+.black2{
+    background-color: rgb(0, 0, 0,0.5) !important;
+}
+.fw{
+    font-weight: 600;
+}
+.non{
+    background: none !important;
+}
+.gd{
+    background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%) !important; color: white;
+}
+.gd:hover{
+    color: black !important;
+}
+.mdsc{
+    position: relative;
+    display: flex;
+    z-index: 5;
+}
+.wht{
+    color: white !important;
+}
+
+@media screen and (max-width: 900px) {
+    .proj-items{
+        margin-top: 2vh;
+    }
+    .det  {
+        position: relative;
+        top: 1.5vh;
+        left: 1vw;
+    }
+    .skill-items{
+        height: 36vh !important;
+    }
+    .skills {
+        height: 34rem !important;
+    }
+    .text1 , .text2{
+        font-weight: 600;
+    }
+    .experience{
+        display: block !important;
+        margin: auto !important;
+        height: 82em !important;
+    }
+    .js {
+        margin-left: 9vw !important;
+    }
+    .edu{
+        margin-top: 8vh !important;
+    }
+    .image{
+        display: none;
+    }
+    .eduDescription{
+        width: 90vw !important;
+        top: 2vh ;
+        left: 6vw !important;
+        right: -1vw;
+    }
+    .wrapp{
+        display: block !important;
+        width: 300px;
+        margin: auto;
+    }
+    .flip-card {
+        display: block;
+        width: 80vw !important;
+        margin: 5vh auto !important;
+        height: 42vh !important;
+    }
+    .in-txt{
+        width: 80vw !important;
+    }
+    .resume button{
+        /* margin-top: 2vh; */
+        width: 30vw;
+    }
+    .container{
+        z-index: 10 !important;
+        height: 8.5vh;
+        width: 100% !important;
+    }
+    .container p{
+        display: block;
+        width: 64vw !important;
+    }
+    nav ul{
+        position: relative;
+        right: 0;
+        left: 43vw;
+        float: right;
+        visibility: hidden;
+        height: 17rem;
+        display: block;
+        background-color: rgb(0, 0, 0,0.8);
+    }
+    .items {
+        animation: slide4 0.2s linear !important;
+    position: absolute;
+    z-index: 1 !important;
+    top: 21.5rem;
+    right: 49vw !important;
+    width: 50vw;
+    background-color: rgb(0, 0, 0,0.8);
+    }
+    
+    .items  a {
+        animation: slide3 0.5s ease !important;
+    }
+    .tgm{
+        top: 2vh;
+        right: 2vw;
+        color: black;
+        display: block !important;
+        position: relative;
+        font-size: 2rem;
+        z-index: 15;
+    }
+    .hd{
+        visibility: visible !important;
+        position: relative;
+        right: 0;
+        visibility: visible !important;
+    }
+    
+}
+.hd{
+    visibility: hidden;
+}
+.tgm{
+    font-size: 2.2rem;
+    z-index: 15;
+    display: none;
+}
+.vsi{
+    z-index: 2 !important;
+    animation: hdd 0.5s ease-in-out;
+    visibility: visible !important;
+}
+@keyframes hdd {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
