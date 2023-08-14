@@ -334,7 +334,7 @@ nav ul li {
     .items {
         animation: slide4 0.2s linear !important;
     position: absolute;
-    z-index: 1 !important;
+    z-index: 11 !important;
     top: 21.5rem;
     right: 49vw !important;
     width: 50vw;
