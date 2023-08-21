@@ -127,7 +127,6 @@ nav ul li {
 .cont1::before{
     content: "";
     background-image: url("/portfolio/images/focused_176845924-stock-photo-young-man-using-laptop-desk-transformed.jpeg");
-    background-attachment: fixed;
     position: absolute;
     display: flex;
     justify-content: center;
